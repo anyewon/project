@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: "맑은고딕";
+}
+
+.hidden{
+    display: none;
+}
+
+#back {
+    position:absolute;
+    width:100%;
+    height:100%;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+}
+#icons{
+    width: 65px;
+    height: 100%;
+    text-align: center;
+    padding-left: 10px;
+}
+#icons span{
+    display: block;
+    width: 65px;
+    height: 97px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    cursor: pointer;
+}
+#icons span:last-child{
+    margin-top: 15px;
+}
+#icons span img{
+    width: 65px;
+    height: 60px;
+    display: block;
+}
+#login-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+#login-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#login-form .user-img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgb(192, 192, 192);
+}
+#login-form .user-img img{
+    width: 300px;
+    height: 300px;
+}
+#login-form p{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 5px 5px 5px rgb(0,0,0,0.3);
+}
+#login-form span{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#login-form input[type="text"]{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 7px 7px 10px rgb(0,0,0,0.6);
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid rgb(0,0,0,0.3);
+}
+#login-form input[type="submit"]{
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: rgb(73, 73, 73);
+    cursor: pointer;
+    color: #fff;
+}
+#user-name{
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    color: #fff;
+}
+#clock{
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h2{
+    font-size: 70px;
+    color: #fff;
+}
+h1{
+    font-size: 28px;
+    color: #fff;
+}
+.p-todo{
+    position: absolute;
+    top: 230px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: black;
+}
+#todolist{
+    width: 600px;
+    height: 800px;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    z-index: 99;
+}
+.kakao-control{
+    float: right;
+    width: 87%;
+    height: 30px;
+    text-align: right;
+    padding: 0 15px;
+}
+.kakao-control span{
+    margin-left: 5px;
+    cursor: pointer;
+}
+.kakao-left{
+    width: 13%;
+    height: 100%;
+    float: left;
+    background: rgb(209, 208, 208);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.kakao-left img{
+    width: 25px;
+    height: 25px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.kakao-left .icon-bottom{
+    width: 20px;
+    height: 20px;
+    margin-top: 30px;
+}
+.kakao-left .mar-icon{
+    margin-top: 400px;
+}
+.kakao-right{
+    width: 87%;
+    height: 100%;
+    float: left;
+}
+.user-profile{
+    position: relative; 
+    padding: 0 15px;
+}
+#todolist .ka-img{
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+}
+
+#todolist #kakao-user{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#todolist #todo-form{
+    margin-top: 15px;
+    padding: 0 15px;
+}
+#todolist #todo-form input[type="text"]{
+    width: 95%;
+    height: 50px;
+    border: 1px solid darkgray;
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+    box-shadow: 7px 7px 7px rgb(0,0,0,0.3);
+    font-size: 18px;
+    margin-left: 12px;
+}
+#todo-list{
+    margin-top: 20px;
+    padding: 0 15px;
+}
+#todo-list li{
+    margin-top: 10px;
+}
+#todo-list li span{
+    font-size: 20px;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+button{
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: #f1f1f1;
+    float: right;
+    margin-top: 10px;
+}
+#weather{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+#weather span{
+    color: #fff;
+    font-size: 17px;
+}
+

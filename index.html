@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js,css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="icons" class="hidden">
+        <span>
+            <img src="img/this-pc-computer-display-windows-11-icon.png" alt="내 pc">
+            내PC
+        </span>
+        <span>
+            <img src="img/Recycle-bin-windows-11-icon.png" alt="휴지통">
+            휴지통
+        </span>
+        <span>
+            <img src="img/chrome.png" alt="크롬">
+            chrome
+        </span>
+        <span>
+            <img src="img/Folder_Icon.svg.png" alt="폴더">
+            졸업작품
+        </span>
+        <span>
+            <img src="img/Visual_Studio_Code_1.35_icon.svg.png" alt="vscode">
+            Visual Studio Code
+        </span>
+        <span>
+            <img src="img/kakao.png" alt="kakao" id="clickfolder">
+            TODOLIST
+        </span>
+    </div>
+    <div id="todolist" class="hidden">
+        <div class="kakao-control">
+            <span>ㅡ</span>
+            <span>□</span>
+            <span id="exit">X</span>
+        </div>
+        <div class="kakao-left">
+            <img src="img/kakao-user.png" alt="카카오 사용자">
+            <img src="img/chating.png" alt="채팅 아이콘">
+            <img src="img/dots.png" alt="더보기 아이콘">
+            <img src="img/pngegg.png" alt="이모티콘" class="icon-bottom mar-icon">
+            <img src="img/notifications.png" alt="알림 아이콘" class="icon-bottom">
+            <img src="img/seting.png" alt="설정 아이콘" class="icon-bottom">
+        </div>
+        <div class="kakao-right">
+            <div class="user-profile">
+                <img src="img/ka_img.jpg" alt="kakaotalk기본 사진" class="ka-img">
+                <span id="kakao-user"></span>
+            </div>
+            <form id="todo-form">
+                <input type="text">
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
+    </div>
+    <div id="clock">
+        <h1></h1>
+        <h2></h2>
+    </div>
+    <span id="user-name"></span>
+    <p class="p-todo hidden">※todolist를 사용하시려면 kakaotalk를 클릭해 주세요※</p>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <form id="login-form" class="hidden">
+        <div class="user-img">
+            <img src="img/user.png" alt="사용자 사진">
+        </div>
+        <span>user</span>
+        <p>이름을 입력하세요~!</p>
+        <input type="text" required id="user-input"><br/>
+        <input type="submit" value="login">
+    </form>
+    <script src="js,css/index.js"></script>
+</body>
+</html>
